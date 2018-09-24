@@ -6,6 +6,7 @@ int main(){
     mountains = read_mountains_from_file("Mountains.csv");
     int total_elevation;
 
+    //Print all mountain object names to test the Mountain constructor
     for (auto m : mountains) {
         cout << m.getName() << endl;
     }
@@ -19,10 +20,6 @@ int main(){
     cout << "Total Elevation: " <<  total_elevation << endl;
     cout << "Average Elevation: " << total_elevation / mountains.size() << endl;
     cout << "Mountain Objects: " << mountains.size();
-
-
-
-
 
     return 0;
 
