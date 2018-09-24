@@ -21,6 +21,8 @@ public:
     Mountain();
     Mountain(string name, string range, int rank, int elevation, int prominence);
 
+    const string &getName() const;
+
     void setName(const string &name);
 
     const string &getRange() const;

@@ -27,6 +27,10 @@ Mountain::Mountain(string name, string range, int rank, int elevation, int promi
 }
 
 //Setters and getters
+const string &Mountain::getName() const {
+    return name;
+}
+
 void Mountain::setName(const string &name) {
     Mountain::name = name;
 }
@@ -63,6 +67,9 @@ void Mountain::setProminence(int prominence) {
     Mountain::prominence = prominence;
 }
 
+
+/* Returns the elevation difference between two mountain objects
+using the object that calls the method and another passed mountain object */
 int Mountain::difference(Mountain m) {
     return abs(elevation - m.getElevation());
 }

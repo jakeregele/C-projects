@@ -6,6 +6,10 @@ int main(){
     mountains = read_mountains_from_file("Mountains.csv");
     int total_elevation;
 
+    for (auto m : mountains) {
+        cout << m.getName() << endl;
+    }
+
     // calculate total elevation
     for (auto m : mountains) {
         total_elevation += m.getElevation();
@@ -15,6 +19,8 @@ int main(){
     cout << "Total Elevation: " <<  total_elevation << endl;
     cout << "Average Elevation: " << total_elevation / mountains.size() << endl;
     cout << "Mountain Objects: " << mountains.size();
+
+
 
 
 
